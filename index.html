@@ -3,14 +3,186 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+  <title>Home</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+<style>
+/* background css */
+.sun {
+  -webkit-animation: spin 800s linear infinite;
+
+}
+.sun{  
+  position: fixed; ;
+  bottom:-18%; 
+  right:-15;
+  width: 100%;
+  margin:auto;
+  z-index: -1;
+}
+body{
+  background-color: white;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.moon {
+  -webkit-animation: rol 800s linear infinite;
+
+}
+.moon{  
+  position: fixed; ;
+  bottom:-18%; 
+  right:-15;
+  width: 100%;
+  margin:auto;
+  z-index: -1;
+}
+body{
+  background-color: white;
+}
+
+@-webkit-keyframes rol {
+  0% { -webkit-transform: rotate(-180deg); }
+  100% { -webkit-transform: rotate(180deg); }
+}
+
+@keyframes rol {
+  0% { transform: rotate(-180deg); }
+  100% { transform: rotate(180deg); }
+}
+  body {
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
+.cloud1 {
+    position: fixed;
+    -webkit-animation: cloud1 5s infinite; 
+    animation: cloud1 800s infinite;
+    z-index: -1;
+}
+.cloud2 {
+    position: fixed;
+    -webkit-animation: cloud2 5s infinite; 
+    animation: cloud2 800s infinite;
+    position: absolute; ;
+    bottom: 75%; 
+    margin:auto;
+    z-index: -1;
+}
+.cloud3 {
+    position: fixed;
+    -webkit-animation: cloud3 5s infinite; 
+    animation: cloud3 800s infinite;
+    position: absolute; ;
+    bottom:45%; 
+    margin:auto;
+    z-index: -1;
+}
+.cloud4 {
+    position: fixed;
+    -webkit-animation: cloud4 5s infinite; 
+    animation: cloud4 800s infinite;
+    position: absolute; ;
+    bottom:66%; 
+    margin:auto;
+    z-index: -1;
+}
+
+@-webkit-keyframes cloud1 {
+    0%{left: -300px;}
+   20%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+@keyframes cloud1 {
+    0%{left: -300px;}
+   20%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+
+@-webkit-keyframes cloud2 {
+    0%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+@keyframes cloud2 {
+    0%{left: -300px;} 
+  100%{left: 110%;}
+}
+@-webkit-keyframes cloud3 {
+     0%{left: -300px;}
+    40%{left: -300px;} 
+   100%{left: 110%;}
+}
+
+@keyframes cloud3 {
+     0%{left: -300px;}
+    40%{left: -300px;} 
+   100%{left: 110%;}
+}
+
+
+@-webkit-keyframes cloud4 {
+   0%{left: -300px;}
+  35%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+@keyframes cloud4 {
+   0%{left: -300px;}
+  35%{left: -300px;} 
+  100%{left: 110%;}
+}
+.world{  
+  position: fixed; ;
+  bottom:-80%; 
+  right:-25%;
+  width: 100%;
+  margin:auto;
+  z-index: -1;
+}
+</style>
 <body>
+
+<!-- animation background -->
+<div class="sun">
+  <img src="image/sun2.png" width="250" height="250">
+</div>
+<div class="moon">
+  <img src="image/moon2.png" width="200" height="200">
+</div>
+
+<div class="cloud1">
+  <img src="image/cloud1.png" width="278" height="125">
+</div>
+<div class="cloud2">
+  <img src="image/cloud1.png" width="278" height="125">
+</div>
+<div class="cloud3">
+  <img src="image/cloud1.png" width="278" height="125">
+</div>
+<div class="cloud4">
+  <img src="image/cloud1.png" width="278" height="125">
+</div>
+
+ <div class="world">
+  <img src="image/world.png" width="50%" height="50%">
+</div>
+<!-- site -->
+
   <nav class="green" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Zonnepanelen</a>
       <ul class="right hide-on-med-and-down">
@@ -25,7 +197,7 @@
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <br><br>
+
       <h1 class="header center green.darken-1">Dasboard zonnepanelen</h1>
       <div class="row center">
       </div>
@@ -39,8 +211,6 @@
 
   <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
@@ -82,8 +252,8 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Gemaakt door:</h5>
-          <p class="grey-text text-lighten-4">AO16</p>
+          <h5 class="white-text">Gemaakt door: AO16</h5>
+<!--           <p class="grey-text text-lighten-4">AO16</p> -->
         </div>
       </div>
     </div>
