@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.sun {
+  -webkit-animation: spin 10s linear infinite;
+
+}
+.sun{  
+  position: absolute; ;
+  bottom:-18%; 
+  right:-15;
+  width: 100%;
+  margin:auto;
+}
+body{
+	background-color: white;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.moon {
+  -webkit-animation: rol 10s linear infinite;
+
+}
+.moon{  
+  position: absolute; ;
+  bottom:-18%; 
+  right:-15;
+  width: 100%;
+  margin:auto;
+}
+body{
+  background-color: white;
+}
+
+@-webkit-keyframes rol {
+  0% { -webkit-transform: rotate(-180deg); }
+  100% { -webkit-transform: rotate(180deg); }
+}
+
+@keyframes rol {
+  0% { transform: rotate(-180deg); }
+  100% { transform: rotate(180deg); }
+}
+  body {
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
+.cloud1 {
+    position: relative;
+    -webkit-animation: cloud1 5s infinite; 
+    animation: cloud1 5s infinite;
+}
+.cloud2 {
+    position: relative;
+    -webkit-animation: cloud2 5s infinite; 
+    animation: cloud2 5s infinite;
+    position: absolute; ;
+    bottom: 75%; 
+    margin:auto;
+}
+.cloud3 {
+    position: relative;
+    -webkit-animation: cloud3 5s infinite; 
+    animation: cloud3 5s infinite;
+    position: absolute; ;
+    bottom:45%; 
+    margin:auto;
+}
+.cloud4 {
+    position: relative;
+    -webkit-animation: cloud4 5s infinite; 
+    animation: cloud4 5s infinite;
+    position: absolute; ;
+    bottom:66%; 
+    margin:auto;
+}
+
+@-webkit-keyframes cloud1 {
+    0%{left: -300px;}
+   20%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+@keyframes cloud1 {
+    0%{left: -300px;}
+   20%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+
+@-webkit-keyframes cloud2 {
+    0%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+@keyframes cloud2 {
+    0%{left: -300px;} 
+  100%{left: 110%;}
+}
+@-webkit-keyframes cloud3 {
+     0%{left: -300px;}
+    40%{left: -300px;} 
+   100%{left: 110%;}
+}
+
+@keyframes cloud3 {
+     0%{left: -300px;}
+    40%{left: -300px;} 
+   100%{left: 110%;}
+}
+
+
+@-webkit-keyframes cloud4 {
+   0%{left: -300px;}
+  35%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+@keyframes cloud4 {
+   0%{left: -300px;}
+  35%{left: -300px;} 
+  100%{left: 110%;}
+}
+.world{  
+  position: absolute; ;
+  bottom:-80%; 
+  right:-25%;
+  width: 100%;
+  margin:auto;
+}
+</style>
+</head>
+<body>
+
+<div class="sun">
+	<img src="sun2.png" width="250" height="250">
+</div>
+<div class="moon">
+  <img src="moon2.png" width="200" height="200">
+</div>
+
+<div class="cloud1">
+  <img src="cloud1.png" width="278" height="125">
+</div>
+<div class="cloud2">
+  <img src="cloud1.png" width="278" height="125">
+</div>
+<div class="cloud3">
+  <img src="cloud1.png" width="278" height="125">
+</div>
+<div class="cloud4">
+  <img src="cloud1.png" width="278" height="125">
+</div>
+
+ <div class="world">
+  <img src="world.png" width="50%" height="50%">
+</div>
+
+
+</body>
+</html>
