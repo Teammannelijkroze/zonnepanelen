@@ -1,0 +1,270 @@
+/* text style */
+html{
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-size: 175%;
+}
+
+/*background animation*/
+.sun {
+  -webkit-animation: spin 600s linear infinite;
+
+}
+.sun{  
+  position: fixed; ;
+  bottom:-18%; 
+  right:-15;
+  width: 100%;
+  margin:auto;
+  z-index: -1;
+}
+body{
+  background-color: white;
+  margin: 0;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.moon {
+  -webkit-animation: rol 600s linear infinite;
+
+}
+.moon{  
+  position: fixed; ;
+  bottom:-18%; 
+  right:-15;
+  width: 100%;
+  margin:auto;
+  z-index: -1;
+}
+body{
+  background-color: white;
+}
+
+@-webkit-keyframes rol {
+  0% { -webkit-transform: rotate(-180deg); }
+  100% { -webkit-transform: rotate(180deg); }
+}
+
+@keyframes rol {
+  0% { transform: rotate(-180deg); }
+  100% { transform: rotate(180deg); }
+}
+  body {
+    overflow-y:hidden;
+    overflow-x: hidden;
+}
+.cloud1 {
+    position: fixed;
+    -webkit-animation: cloud1 5s infinite; 
+    animation: cloud1 600s infinite;
+    z-index: -1;
+}
+.cloud2 {
+    position: fixed;
+    -webkit-animation: cloud2 5s infinite; 
+    animation: cloud2 600s infinite;
+    position: absolute; ;
+    bottom: 75%; 
+    margin:auto;
+    z-index: -1;
+}
+.cloud3 {
+    position: fixed;
+    -webkit-animation: cloud3 5s infinite; 
+    animation: cloud3 600s infinite;
+    position: absolute; ;
+    bottom:45%; 
+    margin:auto;
+    z-index: -1;
+}
+.cloud4 {
+    position: fixed;
+    -webkit-animation: cloud4 5s infinite; 
+    animation: cloud4 600s infinite;
+    position: absolute; ;
+    bottom:66%; 
+    margin:auto;
+    z-index: -1;
+}
+
+@-webkit-keyframes cloud1 {
+    0%{left: -300px;}
+   20%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+@keyframes cloud1 {
+    0%{left: -300px;}
+   20%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+
+@-webkit-keyframes cloud2 {
+    0%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+@keyframes cloud2 {
+    0%{left: -300px;} 
+  100%{left: 110%;}
+}
+@-webkit-keyframes cloud3 {
+     0%{left: -300px;}
+    40%{left: -300px;} 
+   100%{left: 110%;}
+}
+
+@keyframes cloud3 {
+     0%{left: -300px;}
+    40%{left: -300px;} 
+   100%{left: 110%;}
+}
+
+@-webkit-keyframes cloud4 {
+   0%{left: -300px;}
+  35%{left: -300px;} 
+  100%{left: 110%;}
+}
+
+@keyframes cloud4 {
+   0%{left: -300px;}
+  35%{left: -300px;}
+  100%{left: 110%;}
+}
+
+.world{  
+  position: fixed;
+  bottom: -20%; 
+  right:-25%;
+  width: 100%;
+  margin: auto;
+  z-index: -1;
+}
+
+/* containers and everything in it */
+.container_top{
+  height: 9%;
+  background-color: #4CAF50;
+  z-index: -1;
+}
+
+.text_margin{
+  left: 10%;
+  top: 10%;
+  font-size: 50%;
+}
+/*position from the text top*/
+.text_top{
+    position: fixed;
+    left: 9%;
+    top: 2%;
+    text-decoration: none;
+    color: white;
+}
+/*The Errow on the top of the screen*/
+.img_top{
+  position: fixed;
+  left:5.5%; 
+  top:2.2%;
+}
+.container_bottom{
+  position: absolute;
+  height: 15%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #4CAF50;
+  z-index: -1;
+}
+
+.container_bottom_2{
+  position: absolute;
+  height: 5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #47A44A;
+  z-index:-1;
+}
+
+/* icons position */
+.icons_position_link{
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 12%;
+
+}
+/* tekst position */
+.text_position_link{
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 2%;
+  font-size: 100%;
+}
+
+/* tekst colors */
+.text_black{
+  color: black;
+}
+/* links text decoration */
+.index{
+  text-decoration: none;
+  color: #039BE5;
+}
+
+.link_index{
+  text-decoration: none;
+  color: white;
+}
+/*Dropdown Menu*/
+.Pos_Drop{
+  position: fixed;
+  left: 0%;
+  top: -0.5%;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    padding: 21.6px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    top:9%;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 278px;
+    box-shadow: 0px 80px 160px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "roboto", sans-serif;
+    font-size: 75%;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
